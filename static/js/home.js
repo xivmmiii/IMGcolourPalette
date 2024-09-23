@@ -31,6 +31,7 @@ function codeToRun() {
                     color.setAttribute("id", id);
                     color.className = "color";
                     colorCode.className = "code";
+                    colorCode.id = "code" + id;
                     if (i == 0) palette.insertBefore(color, palette.firstChild);
                     else palette.appendChild(color);
                     codes.appendChild(colorCode);
@@ -38,7 +39,20 @@ function codeToRun() {
                     color.style.backgroundColor = colors[i];
                     colorCode.textContent = colors[i];
 
-
+                    color.addEventListener("click", (event) => {
+                        navigator.clipboard.writeText(
+                            event.target.style.backgroundColor
+                        );
+                        code = document.getElementById(
+                            "code" + event.target.id
+                        );
+                        console.log(code.id);
+                        code.textContent = "Copied!";
+                        code.style.color = "white";
+                        code.style.backgroundColor = "black";
+                        code.style.opacity = "50%";
+                       
+                    });
                 }
             })
             .catch((error) =>
