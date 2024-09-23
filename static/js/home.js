@@ -72,8 +72,10 @@ function codeToRun() {
         if (pic.children.length != 0) {
             img = document.getElementsByClassName("img")[0];
             colors = document.getElementsByClassName("colors")[0];
+            codes = document.getElementsByClassName("codes")[0];
             img.remove();
             colors.remove();
+            codes.remove();
         }
         insertIMG();
     });
