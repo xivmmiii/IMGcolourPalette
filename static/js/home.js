@@ -38,14 +38,7 @@ function codeToRun() {
                     color.style.backgroundColor = colors[i];
                     colorCode.textContent = colors[i];
 
-                    color.addEventListener("click", (event,colorCode) => {
-                        navigator.clipboard.writeText(
-                            event.target.style.backgroundColor
-                        );
-                        colorCode.textContent = "Copied!";
-                        colorCode.style.backgroundColor = "gray";
-                        colorCode.style.opacity = "50%";
-                    });
+
                 }
             })
             .catch((error) =>
