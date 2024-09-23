@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ImageColourPalette</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/home.css') }}" />
+  </head>
+
+  <body>
+    <div class="navbar">ImageColourPalette GENERATOR</div>
+    <div id="content">
+      <div class="picture"></div>
+      <form method="POST" class="upload">
+        <input type="file" id="img" />
+        <button type="submit" class="btn" id='submit'>SUBMIT</button>
+      </form>
+    </div>
+    <script src="{{ url_for('static', filename='../static/js/home.js') }}"></script>
+  </body>
+</html>
