@@ -1,4 +1,15 @@
-__pycache__/
+
 venv/
-.vercel/
 .idea/
+.vercel
+*.log
+*.pyc
+__pycache__
+
+# Environments
+.env
+.venv
+env/
+ENV/
+env.bak/
+venv.bak/
