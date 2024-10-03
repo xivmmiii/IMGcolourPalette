@@ -1,11 +1,11 @@
-
+.vercel/
 venv/
 .idea/
 .vercel
 *.log
 *.pyc
 __pycache__
-
+__pycache__/
 # Environments
 .env
 .venv
