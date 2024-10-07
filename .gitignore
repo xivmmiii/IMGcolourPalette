@@ -1,6 +1,5 @@
 .vercel/
 venv/
-.idea/
 .vercel
 *.log
 *.pyc
